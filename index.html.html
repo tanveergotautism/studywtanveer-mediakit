@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tanveer — Studygram Media Kit</title>
+<meta name="description" content="Tanveer (@studywtanveer) — CLAT prep & study-guidance creator. 343K+ reel views and 9.7% engagement in 30 days, mostly Indian Gen-Z audience. Open for brand deals and UGC.">
+<meta property="og:title" content="Tanveer — Studygram Media Kit">
+<meta property="og:description" content="343K+ reel views, 9.7% engagement (30d). CLAT prep & study-guidance creator open for brand deals and UGC.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAF6EC;
+    --paper-alt: #F1EADA;
+    --ink: #1C2321;
+    --ink-soft: #4A524E;
+    --yellow: #FFC93C;
+    --coral: #FF5A36;
+    --line: #DCD3BC;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17181A;
+      --paper-alt: #202224;
+      --ink: #F2EEE4;
+      --ink-soft: #B6B0A2;
+      --yellow: #FFC93C;
+      --coral: #FF7052;
+      --line: #34362F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17181A;
+    --paper-alt: #202224;
+    --ink: #F2EEE4;
+    --ink-soft: #B6B0A2;
+    --yellow: #FFC93C;
+    --coral: #FF7052;
+    --line: #34362F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .mark {
+    background: linear-gradient(105deg, transparent 0%, transparent 4%, var(--yellow) 4%, var(--yellow) 96%, transparent 96%);
+    padding: 0 2px;
+    color: var(--ink);
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 32px;
+  }
+  header h1 { font-size: 30px; font-weight: 700; }
+  header .handle {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--coral);
+    margin-top: 2px;
+    display: block;
+  }
+  header .tagline {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-top: 10px;
+    max-width: 30ch;
+  }
+  header .loc {
+    text-align: right;
+    font-size: 13px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  .hero-stat {
+    padding: 40px 0 36px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-stat .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(48px, 11vw, 76px);
+    line-height: 1;
+  }
+  .hero-stat .label {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .stat-row div .n {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  .stat-row div .l {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
+  section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  section h2 { font-size: 20px; font-weight: 600; margin-bottom: 18px; }
+
+  .posts { display: flex; flex-direction: column; gap: 16px; }
+  .post {
+    background: var(--paper-alt);
+    border-radius: 4px;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+  }
+  .post .title { font-weight: 600; font-size: 15.5px; }
+  .post .why { color: var(--ink-soft); font-size: 13.5px; margin-top: 4px; }
+  .post .nums {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .post .nums b { font-family: 'Space Grotesk', sans-serif; display: block; font-size: 16px; }
+  .post a {
+    color: var(--coral);
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .pillars { display: flex; flex-direction: column; gap: 14px; }
+  .pillars .row { display: flex; gap: 16px; align-items: baseline; }
+  .pillars .row .p-name { font-weight: 600; min-width: 150px; font-size: 15px; }
+  .pillars .row .p-desc { color: var(--ink-soft); font-size: 14px; }
+
+  .bar-group { display: flex; flex-direction: column; gap: 14px; }
+  .bar-label { display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 6px; }
+  .bar-track { background: var(--paper-alt); border: 1px solid var(--line); border-radius: 3px; height: 10px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--coral); }
+  .bar-fill.alt { background: var(--yellow); }
+  .audience-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 560px) { .audience-grid { grid-template-columns: 1fr 1fr; } }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+  .tag {
+    border: 1px solid var(--line);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 13.5px;
+    color: var(--ink);
+  }
+
+  footer {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  footer p { color: var(--ink-soft); font-size: 14px; max-width: 40ch; }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 13px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14.5px;
+    width: fit-content;
+  }
+  .note { font-size: 12.5px; color: var(--ink-soft); }
+
+  @media (max-width: 480px) {
+    header { flex-direction: column; }
+    header .loc { text-align: left; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>Tanveer</h1>
+      <span class="handle">@studywtanveer</span>
+      <p class="tagline">CLAT prep, study routines, and honest study-guidance content for a young, mostly Indian student audience.</p>
+    </div>
+    <div class="loc">Media kit<br>Updated Sep 2026</div>
+  </header>
+
+  <div class="hero-stat">
+    <div class="num">343K<span style="font-size:0.4em; color:var(--ink-soft); font-weight:500;">+ views</span></div>
+    <div class="label">Reel views across the last 30 days, on a 317-follower account — reach is consistently outpacing following.</div>
+  </div>
+
+  <div class="stat-row">
+    <div>
+      <div class="n">9.7%</div>
+      <div class="l">Engagement rate (likes+comments+saves+shares ÷ views)</div>
+    </div>
+    <div>
+      <div class="n">23–30%</div>
+      <div class="l">3-second skip rate on top reels — well under typical short-form drop-off</div>
+    </div>
+    <div>
+      <div class="n">20</div>
+      <div class="l">Reels posted in the period, near-daily cadence</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Top performing content</h2>
+    <div class="posts">
+      <div class="post">
+        <div class="title">"Day 3 gng"</div>
+        <div class="why">Day-numbered series format, punchline-led hook, sub-1-second setup.</div>
+        <div class="nums">
+          <div><b>194,898</b>views</div>
+          <div><b>21,103</b>engagements</div>
+          <div><b>7,004</b>shares</div>
+        </div>
+        <a href="https://www.instagram.com/reel/DdKU6eszWsk/" target="_blank" rel="noopener">View on Instagram →</a>
+      </div>
+      <div class="post">
+        <div class="title">"The sync at the end was so good"</div>
+        <div class="why">Sound-sync payoff structure — held watch time to 14.7s average.</div>
+        <div class="nums">
+          <div><b>115,112</b>views</div>
+          <div><b>10,645</b>engagements</div>
+          <div><b>3,625</b>shares</div>
+        </div>
+        <a href="https://www.instagram.com/reel/DdivsD6JOFV/" target="_blank" rel="noopener">View on Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Content pillars</h2>
+    <div class="pillars">
+      <div class="row"><span class="p-name">Study-with-me</span><span class="p-desc">CLAT prep sessions, mock analysis, exam-day reactions</span></div>
+      <div class="row"><span class="p-name">Study guidance</span><span class="p-desc">Routines, productivity habits, and real advice for law aspirants</span></div>
+      <div class="row"><span class="p-name">Relatable commentary</span><span class="p-desc">Day-numbered, punchline-driven — the format proven to convert views into shares</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Audience snapshot</h2>
+    <div class="audience-grid">
+      <div class="bar-group">
+        <div>
+          <div class="bar-label"><span>18–24 years</span><span>50%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%"></div></div>
+        </div>
+        <div>
+          <div class="bar-label"><span>25–34 years</span><span>26%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:26%"></div></div>
+        </div>
+        <div>
+          <div class="bar-label"><span>13–17 years</span><span>13%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:13%"></div></div>
+        </div>
+      </div>
+      <div class="bar-group">
+        <div>
+          <div class="bar-label"><span>India</span><span>81%</span></div>
+          <div class="bar-track"><div class="bar-fill alt" style="width:81%"></div></div>
+        </div>
+        <div>
+          <div class="bar-label"><span>Male (of identified)</span><span>78%</span></div>
+          <div class="bar-track"><div class="bar-fill alt" style="width:78%"></div></div>
+        </div>
+        <div>
+          <div class="bar-label"><span>Female (of identified)</span><span>22%</span></div>
+          <div class="bar-track"><div class="bar-fill alt" style="width:22%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Best brand fit</h2>
+    <div class="tags">
+      <span class="tag">Test-prep / ed-tech</span>
+      <span class="tag">Stationery &amp; planners</span>
+      <span class="tag">Productivity &amp; study apps</span>
+      <span class="tag">Student lifestyle</span>
+      <span class="tag">Book &amp; reading brands</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Open to <span class="mark">affiliate partnerships, sponsored reels, and UGC collabs</span> in the categories above.</p>
+    <a class="cta" href="mailto:studywtanveer@gmail.com">Email studywtanveer@gmail.com →</a>
+    <p class="note">Or DM on <a href="https://instagram.com/studywtanveer" target="_blank" rel="noopener" style="color:var(--coral)">Instagram</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
